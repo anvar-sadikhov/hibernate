@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+
+<h1>Add New Book</h1>
+<form action="#" th:action="@{/create}" th:object="${book}" method="post">
+    <p>Author: <input type="text" th:field="*{author}"/></p>
+    <p>Title: <input type="text" th:field="*{title}"/></p>
+    <p>
+        <input type="submit" value="Submit" onclick="createBook()" />
+        <input type="reset" value="Reset"/>
+    </p>
+    <p><input type="button" onclick="goBack()" value="Back"></p>
+    <p><input type="button" onclick="goMain()" value="Main Page"></p>
+
+</form>
+<script>
+    function createBook() {
+        alert("New Book Added\nYou can check added book in View page");
+    }
+    function goBack(){
+        window.history.back();
+    }
+    function goMain(){
+        window.location.href="/index";
+    }
+</script>
+</body>
+</html>

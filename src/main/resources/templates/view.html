@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Page</title>
+</head>
+<body>
+<h1>Find Book</h1>
+<form th:action="@{/view}" method="get">
+    <p>ID: <input type="id" th:name="id"/></p>
+    <p><input type="submit" value="Submit"/></p>
+    <p><input type="reset" value="Reset"/></p>
+</form>
+
+<form th:action="@{/books}" th:method="get">
+    <p><input type="submit" value="View All Books"/></p>
+</form>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Author</th>
+        <th>Title</th>
+    </tr>
+    <tr>
+        <td th:text="${book.id}">123</td>
+        <td th:text="${book.author}">test</td>
+        <td th:text="${book.title}">test</td>
+
+    </tr>
+
+</table>
+<p><input type="button" onclick="goBack()" value="Back"></p>
+<p><input type="button" onclick="goMain()" value="Main Page"></p>
+</body>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    function goMain() {
+        window.location.href = "/index";
+    }
+</script>
+</html>

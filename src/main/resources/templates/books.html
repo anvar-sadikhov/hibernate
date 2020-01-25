@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Books</title>
+</head>
+<body>
+<h1>All Books</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Author</th>
+        <th>Title</th>
+    </tr>
+    <tr th:each = "book : ${books}">
+        <td th:text = "${book.id}">123</td>
+        <td th:text = "${book.author}">test</td>
+        <td th:text = "${book.title}">test</td>
+    </tr>
+</table>
+<p><input type="button" onclick="goBack()" value="Back"></p>
+<p><input type="button" onclick="goMain()" value="Main Page"></p>
+</body>
+<script>
+    function goBack(){
+        window.history.back();
+    }
+    function goMain(){
+        window.location.href="/index";
+    }
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<h1>Index Page</h1>
+<form action="#" th:action="@{/createForm}" method="get">
+    <input type="submit" value="Create">
+</form>
+<br>
+<form action="" # th:action="@{/viewForm}" method="get">
+    <input type="submit" value="View">
+</form>
+<br>
+<form action="" # th:action="@{/updateForm}" method="get">
+    <input type="submit" value="Update">
+</form>
+<br>
+<form action="" # th:action="@{/deleteForm}" method="get">
+    <input type="submit" value="Delete">
+</form>
+</body>
+</html>

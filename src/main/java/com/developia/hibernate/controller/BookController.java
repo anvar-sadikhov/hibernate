@@ -18,6 +18,7 @@ public class BookController {
     @PostMapping("/create")
     public void create(@ModelAttribute Book book) {
         bookService.create(book);
+        System.out.println(book.getTitle());
 
     }
 

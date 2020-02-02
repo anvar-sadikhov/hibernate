@@ -2,6 +2,7 @@ package com.developia.hibernate;
 
 import com.developia.hibernate.repository.BookRepository;
 import com.developia.hibernate.repository.CarRepository;
+import com.developia.hibernate.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,6 +14,8 @@ public class HibernateApplication implements CommandLineRunner {
     BookRepository bookRepository;
     @Autowired
     CarRepository carRepository;
+    @Autowired
+    StudentRepository studentRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(HibernateApplication.class, args);

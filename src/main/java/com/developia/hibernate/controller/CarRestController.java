@@ -2,20 +2,19 @@ package com.developia.hibernate.controller;
 
 import com.developia.hibernate.entity.Car;
 import com.developia.hibernate.service.CarService;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
-public class CarController {
+@RestController
+public class CarRestController {
 
     private final CarService carService;
 
-    public CarController(CarService carService) {
+    public CarRestController(CarService carService) {
         this.carService = carService;
     }
 
-    @PostMapping("/saveCar")
+    @PostMapping("/car/save")
     public void create(@RequestBody Car car) {
         carService.save(car);
         System.out.println(car.getName());

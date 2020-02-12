@@ -29,4 +29,10 @@ public class BookRestController {
         Iterable<Book> books = bookService.findAll();
         return books;
     }
+
+    @GetMapping("/find/{title}")
+    public Book findById(@PathVariable String title){
+        Book book = bookService.findByTitle(title);
+        return book;
+    }
 }

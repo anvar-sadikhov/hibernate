@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping(value = "/car")
 public class CarRestController {
 
     private final CarService carService;
@@ -14,18 +15,17 @@ public class CarRestController {
         this.carService = carService;
     }
 
-    @PostMapping("/car/save")
+    @PostMapping("/save")
     public void create(@RequestBody Car car) {
         carService.save(car);
         System.out.println(car.getName());
 
     }
 
-    @GetMapping("/cars")
-    public String getCar(Model model) {
-        Iterable<Car> cars = carService.findAll();
-        model.addAttribute("cars", cars);
-        return "cars";
+    @GetMapping("/delete/{id}")
+    public void deleteCar(@PathVariable Long id) {
+        carService.delete(id);
     }
+
 
 }

@@ -1,11 +1,19 @@
 package com.developia.hibernate.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jdk.nashorn.internal.ir.annotations.Ignore;
+import lombok.Builder;
+import lombok.Data;
+import lombok.ToString;
+import net.bytebuddy.implementation.bind.annotation.IgnoreForBinding;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
+/*import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.Id;*/
 
+@Data
 @Entity(name = "students")
 public class Student {
     @Id
@@ -16,7 +24,18 @@ public class Student {
     private int age;
     private String email;
 
-    public Long getId() {
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "car_id")
+    @ToString.Exclude
+    private Car car;
+
+    @ManyToOne
+    @JoinColumn(name = "university_id")
+    @ToString.Exclude
+    @JsonIgnore
+    private University university;
+
+/*    public Long getId() {
         return id;
     }
 
@@ -55,4 +74,13 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }*/
 }

@@ -6,6 +6,8 @@ public interface BookService {
 
     Book findById(Long id);
 
+    Book findByTitle (String title);
+
     Iterable<Book> findAll();
 
     void create(Book book);

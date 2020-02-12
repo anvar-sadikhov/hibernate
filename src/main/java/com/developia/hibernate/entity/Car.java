@@ -1,11 +1,15 @@
 package com.developia.hibernate.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.*;
 
-@Entity(name = "Car")
+import javax.persistence.*;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@ToString
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,7 +18,13 @@ public class Car {
     private Integer year;
     private String color;
 
-    public Long getId() {
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "student_id")
+    @ToString.Exclude
+    private Student student;
+
+/*    public Long getId() {
         return id;
     }
 
@@ -45,4 +55,12 @@ public class Car {
     public void setColor(String color) {
         this.color = color;
     }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }*/
 }

@@ -1,6 +1,6 @@
 package com.developia.hibernate.service;
 
-import com.developia.hibernate.entity.Book;
+
 import com.developia.hibernate.entity.Student;
 
 import java.util.List;

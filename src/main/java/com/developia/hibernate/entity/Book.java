@@ -1,11 +1,12 @@
 package com.developia.hibernate.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.*;
 
-@Entity(name = "Book")
+import javax.persistence.*;
+import java.util.List;
+
+@Data
+@Entity
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -13,7 +14,18 @@ public class Book {
     private String author;
     private String title;
 
-    public Long getId() {
+    @OneToMany
+    @JoinTable(
+            name = "book_authors",
+            joinColumns = {@JoinColumn(name = "book_id")},
+            inverseJoinColumns = {@JoinColumn(name = "author_id")})
+    @EqualsAndHashCode.Exclude
+
+    private List<Author> authors;
+
+
+
+/*    public Long getId() {
         return id;
     }
 
@@ -35,5 +47,5 @@ public class Book {
 
     public void setTitle(String title) {
         this.title = title;
-    }
+    }*/
 }

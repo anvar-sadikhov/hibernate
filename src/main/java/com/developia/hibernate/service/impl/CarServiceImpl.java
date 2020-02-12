@@ -25,4 +25,37 @@ public class CarServiceImpl implements CarService {
     public Iterable<Car> findAll() {
         return carRepository.findAll();
     }
+
+
+    @Override
+    public Car findById(Long id) {
+        return null;
+    }
+
+    @Override
+    public Car findByName(String name) {
+        return null;
+    }
+
+    @Override
+    public Car findByColor(String color) {
+        return null;
+    }
+
+    @Override
+    public Car findByYear(Integer year) {
+        return null;
+    }
+
+    @Override
+    public void update(Car car) {
+
+    }
+
+    @Override
+    public void delete(Long id) {
+        Car car = carRepository.findById(id).get();
+        carRepository.delete(car);
+
+    }
 }

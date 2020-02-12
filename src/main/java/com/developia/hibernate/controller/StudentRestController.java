@@ -21,16 +21,21 @@ public class StudentRestController {
         System.out.println(student.getName());
     }
 
-    @GetMapping("/find/{id}")
-    public Student find(@PathVariable Long id) {
-        Student student = studentService.findById(id);
-        return student;
+    @GetMapping("/delete/{id}")
+    public void deleteStudent(@PathVariable Long id) {
+        studentService.delete(id);
     }
 
-    @GetMapping("/find/{name}")
+    @GetMapping("/find/{id}")
+    public Student find(@PathVariable Long id) {
+        return studentService.findById(id);
+
+    }
+
+    @GetMapping("/find/name/{name}")
     public Student findByName(@PathVariable String name) {
-        Student student = studentService.findByName(name);
-        return student;
+        return studentService.findByName(name);
+
     }
 
     @GetMapping("/find/fullname/{name}/{surname}")
@@ -40,7 +45,7 @@ public class StudentRestController {
     }
 
 
-    @GetMapping("/find/ages/{age}")
+    @GetMapping("/find/age/{age}")
     public List<Student> findByAge(@PathVariable Integer age) {
         return studentService.findByAge(age);
 
@@ -54,8 +59,8 @@ public class StudentRestController {
     @GetMapping("/find/all")
     public Iterable<Student> findAll() {
 
-        Iterable<Student> students = studentService.findAll();
-        return students;
+        return studentService.findAll();
+
     }
 
     @GetMapping("/count")

@@ -55,7 +55,7 @@ public class StudentController {
     }
 
     @GetMapping("/delete")
-    public String deleteBook(Student student, @RequestParam Long id) {
+    public String deleteBook(@RequestParam Long id) {
         try {
             studentService.delete(id);
             return "delete";

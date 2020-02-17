@@ -2,54 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd55e307-667f-43e9-9477-d204b9da6d46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/entity/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/entity/University.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/repository/UniversityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_14_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_9_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_0_BUILD_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_0_BUILD_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_0_M2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_3_0_M2.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/controller/ErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/exceptions/BadRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/exceptions/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/exceptions/UnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/model/RestErrorResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/HibernateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/HibernateApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/controller/BookRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/controller/BookRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/controller/CarRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/controller/CarRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/controller/StudentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/controller/StudentRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/entity/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/impl/CarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developia/hibernate/service/impl/StudentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/developia/hibernate/HibernateApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developia/hibernate/HibernateApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developia/hibernate/controller/BookRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developia/hibernate/controller/BookRestController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/developia/hibernate/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developia/hibernate/entity/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/developia/hibernate/entity/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developia/hibernate/entity/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developia/hibernate/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developia/hibernate/repository/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developia/hibernate/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developia/hibernate/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developia/hibernate/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developia/hibernate/service/impl/BookServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +57,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -119,6 +87,10 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.developia.hibernate.entity" />
+      <recent name="com.developia.hibernate.controller" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.developia.hibernate.exceptions" />
       <recent name="com.developia.hibernate.controller" />
     </key>
   </component>
@@ -175,7 +147,9 @@
       <workItem from="1581161249043" duration="638000" />
       <workItem from="1581167454254" duration="4298000" />
       <workItem from="1581172365564" duration="3953000" />
-      <workItem from="1581544362976" duration="1608000" />
+      <workItem from="1581544362976" duration="2673000" />
+      <workItem from="1581607166406" duration="6911000" />
+      <workItem from="1581889166361" duration="76000" />
     </task>
     <servers />
   </component>
@@ -230,42 +204,42 @@
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
     <state x="500" y="211" width="1236" height="1025" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.2256.1426@0.0.2256.1426" timestamp="1580301372612" />
-    <state x="730" y="342" width="786" height="749" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580507082391">
+    <state x="730" y="342" width="786" height="748" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581614233977">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state x="730" y="342" width="786" height="749" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2256.1426@0.0.2256.1426" timestamp="1580507082391" />
-    <state width="2192" height="355" key="GridCell.Tab.0.bottom" timestamp="1581176321283">
+    <state x="730" y="342" width="786" height="748" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2256.1426@0.0.2256.1426" timestamp="1581614233977" />
+    <state width="2192" height="354" key="GridCell.Tab.0.bottom" timestamp="1581614356482">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state width="2192" height="355" key="GridCell.Tab.0.bottom/0.0.2256.1426@0.0.2256.1426" timestamp="1581176321283" />
-    <state width="2192" height="355" key="GridCell.Tab.0.center" timestamp="1581176321283">
+    <state width="2192" height="354" key="GridCell.Tab.0.bottom/0.0.2256.1426@0.0.2256.1426" timestamp="1581614356482" />
+    <state width="2192" height="354" key="GridCell.Tab.0.center" timestamp="1581614356480">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state width="2192" height="355" key="GridCell.Tab.0.center/0.0.2256.1426@0.0.2256.1426" timestamp="1581176321283" />
-    <state width="2192" height="355" key="GridCell.Tab.0.left" timestamp="1581176321282">
+    <state width="2192" height="354" key="GridCell.Tab.0.center/0.0.2256.1426@0.0.2256.1426" timestamp="1581614356480" />
+    <state width="2192" height="354" key="GridCell.Tab.0.left" timestamp="1581614356480">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state width="2192" height="355" key="GridCell.Tab.0.left/0.0.2256.1426@0.0.2256.1426" timestamp="1581176321282" />
-    <state width="2192" height="355" key="GridCell.Tab.0.right" timestamp="1581176321283">
+    <state width="2192" height="354" key="GridCell.Tab.0.left/0.0.2256.1426@0.0.2256.1426" timestamp="1581614356480" />
+    <state width="2192" height="354" key="GridCell.Tab.0.right" timestamp="1581614356481">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state width="2192" height="355" key="GridCell.Tab.0.right/0.0.2256.1426@0.0.2256.1426" timestamp="1581176321283" />
-    <state width="2192" height="355" key="GridCell.Tab.1.bottom" timestamp="1581176321284">
+    <state width="2192" height="354" key="GridCell.Tab.0.right/0.0.2256.1426@0.0.2256.1426" timestamp="1581614356481" />
+    <state width="2192" height="354" key="GridCell.Tab.1.bottom" timestamp="1581614356484">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state width="2192" height="355" key="GridCell.Tab.1.bottom/0.0.2256.1426@0.0.2256.1426" timestamp="1581176321284" />
-    <state width="2192" height="355" key="GridCell.Tab.1.center" timestamp="1581176321284">
+    <state width="2192" height="354" key="GridCell.Tab.1.bottom/0.0.2256.1426@0.0.2256.1426" timestamp="1581614356484" />
+    <state width="2192" height="354" key="GridCell.Tab.1.center" timestamp="1581614356483">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state width="2192" height="355" key="GridCell.Tab.1.center/0.0.2256.1426@0.0.2256.1426" timestamp="1581176321284" />
-    <state width="2192" height="355" key="GridCell.Tab.1.left" timestamp="1581176321283">
+    <state width="2192" height="354" key="GridCell.Tab.1.center/0.0.2256.1426@0.0.2256.1426" timestamp="1581614356483" />
+    <state width="2192" height="354" key="GridCell.Tab.1.left" timestamp="1581614356482">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state width="2192" height="355" key="GridCell.Tab.1.left/0.0.2256.1426@0.0.2256.1426" timestamp="1581176321283" />
-    <state width="2192" height="355" key="GridCell.Tab.1.right" timestamp="1581176321284">
+    <state width="2192" height="354" key="GridCell.Tab.1.left/0.0.2256.1426@0.0.2256.1426" timestamp="1581614356482" />
+    <state width="2192" height="354" key="GridCell.Tab.1.right" timestamp="1581614356483">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state width="2192" height="355" key="GridCell.Tab.1.right/0.0.2256.1426@0.0.2256.1426" timestamp="1581176321284" />
+    <state width="2192" height="354" key="GridCell.Tab.1.right/0.0.2256.1426@0.0.2256.1426" timestamp="1581614356483" />
     <state width="2192" height="458" key="GridCell.Tab.2.bottom" timestamp="1580966699669">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
@@ -294,6 +268,10 @@
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
     <state x="377" y="171" width="1500" height="1093" key="SettingsEditor/0.0.2256.1426@0.0.2256.1426" timestamp="1581172346565" />
+    <state x="721" y="297" width="803" height="839" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581608696074">
+      <screen x="0" y="0" width="2256" height="1426" />
+    </state>
+    <state x="721" y="297" width="803" height="839" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2256.1426@0.0.2256.1426" timestamp="1581608696074" />
     <state x="747" y="199" width="750" height="1036" key="refactoring.ChangeSignatureDialog" timestamp="1581002907005">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
@@ -302,9 +280,9 @@
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
     <state x="623" y="321" width="1009" height="1469" key="run.anything.popup/0.0.2256.1426@0.0.2256.1426" timestamp="1580678775359" />
-    <state x="621" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1581171908667">
+    <state x="621" y="0" width="1009" height="1422" key="search.everywhere.popup" timestamp="1581614246543">
       <screen x="0" y="0" width="2256" height="1426" />
     </state>
-    <state x="621" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.2256.1426@0.0.2256.1426" timestamp="1581171908667" />
+    <state x="621" y="0" width="1009" height="1422" key="search.everywhere.popup/0.0.2256.1426@0.0.2256.1426" timestamp="1581614246543" />
   </component>
 </project>

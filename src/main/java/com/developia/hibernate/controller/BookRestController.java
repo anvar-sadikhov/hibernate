@@ -30,7 +30,7 @@ public class BookRestController {
         return books;
     }
 
-    @GetMapping("/find/{title}")
+    @GetMapping("/find/title/{title}")
     public Book findById(@PathVariable String title){
         Book book = bookService.findByTitle(title);
         return book;

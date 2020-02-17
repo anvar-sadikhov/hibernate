@@ -6,6 +6,7 @@ import com.developia.hibernate.entity.University;
 import com.developia.hibernate.repository.BookRepository;
 import com.developia.hibernate.repository.CarRepository;
 import com.developia.hibernate.repository.StudentRepository;
+import com.developia.hibernate.repository.UniversityRepository;
 import lombok.Builder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -16,11 +17,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HibernateApplication implements CommandLineRunner {
     @Autowired
     BookRepository bookRepository;
+
     @Autowired
     CarRepository carRepository;
-    @Autowired
 
+    @Autowired
     StudentRepository studentRepository;
+
+    @Autowired
+    UniversityRepository universityRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(HibernateApplication.class, args);
@@ -28,7 +33,12 @@ public class HibernateApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        Book book = Book.builder().author("New Author").title("New Book").build();
+
+
+        //        Book book = Book.builder()
+        //                         .author("New Author")
+        //                         .title("New Book")
+        //                         .build();
 
 
 /*        Book book = new Book();

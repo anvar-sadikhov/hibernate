@@ -1,6 +1,8 @@
 package com.developia.hibernate.service.impl;
 
 import com.developia.hibernate.entity.Book;
+import com.developia.hibernate.exceptions.NotFoundException;
+import com.developia.hibernate.exceptions.UnauthorizedException;
 import com.developia.hibernate.repository.BookRepository;
 import com.developia.hibernate.service.BookService;
 import org.springframework.stereotype.Service;
@@ -16,7 +18,11 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book findById(Long id) {
-        return bookRepository.findById(id).get();
+
+
+               return bookRepository.findById(id).get();
+
+
     }
 
     @Override

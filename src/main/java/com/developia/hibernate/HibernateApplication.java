@@ -1,6 +1,7 @@
 package com.developia.hibernate;
 
 import com.developia.hibernate.entity.Book;
+import com.developia.hibernate.entity.Car;
 import com.developia.hibernate.entity.Student;
 import com.developia.hibernate.entity.University;
 import com.developia.hibernate.repository.BookRepository;
@@ -39,6 +40,18 @@ public class HibernateApplication implements CommandLineRunner {
         //                         .author("New Author")
         //                         .title("New Book")
         //                         .build();
+
+/*        Student student =studentRepository.findById(130L).get();
+
+        Car car = Car
+                .builder()
+                .name("Toyota")
+                .color("Blue")
+                .year(1999)
+                .build();
+
+        student.setCar(car);
+        studentRepository.save(student);*/
 
 
 /*        Book book = new Book();

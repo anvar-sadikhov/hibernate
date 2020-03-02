@@ -1,6 +1,7 @@
 package com.developia.hibernate.service.impl;
 
 import com.developia.hibernate.entity.Student;
+import com.developia.hibernate.exceptions.SignException;
 import com.developia.hibernate.repository.StudentRepository;
 import com.developia.hibernate.service.StudentService;
 import org.springframework.stereotype.Service;
@@ -28,7 +29,12 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Student findById(Long id) {
-        return studentRepository.findById(id).get();
+        try {
+            return studentRepository.findById(id).get();
+        }catch (Exception ex){
+            throw new SignException("Not Signed");
+        }
+
     }
 
     @Override

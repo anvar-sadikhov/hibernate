@@ -2,6 +2,7 @@ package com.developia.hibernate.controller;
 
 import com.developia.hibernate.exceptions.BadRequest;
 import com.developia.hibernate.exceptions.NotFoundException;
+import com.developia.hibernate.exceptions.SignException;
 import com.developia.hibernate.exceptions.UnauthorizedException;
 import com.developia.hibernate.model.RestErrorResponse;
 import org.springframework.http.HttpStatus;
@@ -30,7 +31,7 @@ public class ErrorHandler extends ResponseEntityExceptionHandler {
                 ex.getMessage()
         );
     }
-    
+
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(NoSuchElementException.class)
@@ -39,5 +40,14 @@ public class ErrorHandler extends ResponseEntityExceptionHandler {
                 HttpStatus.NOT_FOUND.value(),
                 ex.getMessage()
         );
+    }
+
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
+    @ExceptionHandler(SignException.class)
+    public RestErrorResponse signException(SignException ex) {
+        return new RestErrorResponse(
+                HttpStatus.UNAUTHORIZED.value(),
+                ex.getMessage());
+
     }
 }
